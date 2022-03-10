@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+#admin {
+  text-align: center;
+  font-size: 50px;
+}
+
+.account ul {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.account ul li {
+  list-style-type: none;
+}

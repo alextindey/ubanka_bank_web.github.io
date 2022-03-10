@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adetunji_John</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/transact.js" defer></script>
+  <script src="./js/main.js" defer></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body onload="startTime()">
+  <div class="container">
+    <aside>
+      <div class="top">
+        <div class="logo">
+          <img src="./img/baseline_admin_panel_settings_black_24dp.png" alt="">
+          <h2>Welcome <br><span class="danger">Adetunji John</span></h2>
+        </div>
+
+        <div class="close" id="close-btn">
+          <span class="material-icons-sharp"><img src="./img/baseline_close_black_24dp.png" alt=""></span>
+        </div>
+      </div>
+
+        <div class="sidebar">
+          <a href="#acc" class="active">
+            <span class="material-icons-sharp"><img src="./img/baseline_dashboard_black_24dp.png" alt=""></span>
+            <h3>Dashboard</h3>
+            </a>  
+          <a href="#trans">
+            <span class="material-icons-sharp"><img src="./img/baseline_paid_black_24dp.png" alt=""></span>
+            <h3>Transactions</h3>
+          </a> 
+          <a href="#">
+            <span class="material-icons-sharp"><img src="./img/baseline_settings_black_24dp.png" alt=""></span>
+            <h3>setting</h3>
+          </a> 
+          <a href="#">
+            <span class="material-icons-sharp"><img src="./img/baseline_logout_black_24dp.png" alt=""></span>
+            <h3>Logout</h3>
+          </a> 
+           
+        </div>
+    </aside>
+
+    <!---------------------------------end of aside----------------------------------------->
+
+    <!----------------------------------Account details------------------------------------->
+
+    <main>
+      <h1 class="head" id="acc">Account Details</h1>
+      <div id="date"></div>
+      
+      <div class="time"><h3>Time: 
+      <div id="time" onload="startTime()"></div>
+      </h3></div>
+
+      <div class="insight">
+        <div class="accountBalance">
+          <span class="material-icons-sharp"><img src="./img/baseline_account_balance_wallet_black_24dp.png" alt=""></span>
+          <div class="middle">
+           <div class="left">
+              <h2>Account #<span id="accNum"></span></h2> <!----randomly put number using math.random----------->
+              <h1 >$<span id="balance"></span></h1>
+           </div>
+          </div>
+        </div>
+      </div>
+      <div class="recent-order">
+        <h2 id="trans">Transaction History</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Transaction</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Amount </th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr>
+              <td>firstmonie</td>
+              <td>2/08/2021</td>
+              <td>2:30</td>
+              <td>$500</td>
+              <td>succesful</td>
+            </tr> -->
+          </tbody>
+        </table>
+        
+        <a href="#">Show All</a>
+   
+      </div>
+    </main>
+   <!----------------------------------End of Account detail------------------------------------->
+
+   
+  </div>
+
+</body>
+</html>
